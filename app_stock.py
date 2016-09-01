@@ -1,5 +1,5 @@
-from __future__ import print_function # In python 2.7
-import sys
+#from __future__ import print_function # In python 2.7
+#import sys
 
 import datetime
 import dateutil.relativedelta
@@ -42,7 +42,7 @@ def trends():
   params = {'column_index':4,'start_date':start_date,'end_date':end_date,'api_key':'SFx6jqyfXv_dK7zyzniy'}
   
   #request data
-  print(url,file=sys.stderr) #debugging purposes
+  #print(url,file=sys.stderr) #debugging purposes
   r = requests.get(url=url, params=params)
   dataset = json.loads(r.content)
   data_dict = dataset['dataset']
