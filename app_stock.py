@@ -69,4 +69,4 @@ def trends():
   return render_template('timeseries.html', script=script, div=div, ttl=ttl)
 
 if __name__ == '__main__':
-  app_stock.run(host='0.0.0.0')
+  app_stock.run(host='0.0.0.0', port=5000)

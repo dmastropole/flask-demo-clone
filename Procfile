@@ -1,1 +1,1 @@
-web: gunicorn app_stock:app
+web: gunicorn -b 0.0.0.0:5000 app_stock:app
