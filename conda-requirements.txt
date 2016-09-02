@@ -5,3 +5,4 @@ bokeh
 requests
 simplejson
 Flask
+gunicorn
