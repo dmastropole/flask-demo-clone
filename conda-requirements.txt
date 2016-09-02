@@ -2,3 +2,6 @@ scipy
 numpy
 pandas
 bokeh
+requests
+simplejson
+Flask
