@@ -1,5 +1,6 @@
 #from __future__ import print_function # In python 2.7
 #import sys
+import os
 import datetime
 import dateutil.relativedelta
 import numpy as np
@@ -68,4 +69,5 @@ def trends():
   return render_template('timeseries.html', script=script, div=div, ttl=ttl)
 
 if __name__ == '__main__':
-  app_stock.run(host='0.0.0.0', port=5000)
+  port = int(os.environ.get('PORT',5000))
+  app_stock.run(host='0.0.0.0', port=port)
